@@ -1,0 +1,49 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg " style="background-color: #14ccc3;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HOMEWORK 3</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="suhu-nav">Suhu</a>
+              <a class="navbar-brand" href="#" id="spbu-nav">SPBU</a>
+            </div>
+          </nav>
+         
+    <div id="suhu-container" class="container text-center">
+        <h2>Kalkulator Suhu</h2>
+        <label for="inputSuhu" >Masukkan Suhu:</label>
+        <input type="number" id="inputSuhu"  >
+        <button id="checkSuhu" type="button" class="btn btn-success">Cek Suhu</button>
+        <p id="hasilSuhu"></p>
+    </div>
+
+    <div id="spbu-container" style="display:none;" class="container text-center">
+        <h2>SPBU</h2>
+        <label for="platKuning">Plat Kuning:</label>
+        <input type="checkbox" id="platKuning">
+        <br>
+        <label for="motor">Motor:</label>
+        <input type="checkbox" id="motor">
+        <br>
+        <label for="cc">CC Mobil:</label>
+        <input type="number" id="cc">
+        <br>
+        <button id="checkSPBU" type="button" class="btn btn-success">Cek SPBU</button>
+        <p id="hasilSPBU"></p>
+    </div>
+
+    <script src="spbu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
